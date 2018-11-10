@@ -11,6 +11,8 @@
 		53AAE3FA144D15530082B27B /* ccc_shap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AAE3F4144D15530082B27B /* ccc_shap.cpp */; };
 		53AAE3FB144D15530082B27B /* ccc_x11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AAE3F7144D15530082B27B /* ccc_x11.cpp */; };
 		53AAE3FC144D15530082B27B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53AAE3F9144D15530082B27B /* main.cpp */; };
+		55FF156221965D3B00221938 /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FF156021965D3B00221938 /* vehicle.cpp */; };
+		55FF1565219682A200221938 /* truck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FF1563219682A200221938 /* truck.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		53AAE3E7144D14E60082B27B /* Horstmann_Master */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Horstmann_Master; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AAE3E7144D14E60082B27B /* P8_10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = P8_10; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AAE3ED144D14E60082B27B /* Horstmann.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Horstmann.1; sourceTree = "<group>"; };
 		53AAE3F4144D15530082B27B /* ccc_shap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ccc_shap.cpp; sourceTree = "<group>"; };
 		53AAE3F5144D15530082B27B /* ccc_shap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccc_shap.h; sourceTree = "<group>"; };
@@ -35,6 +37,10 @@
 		53AAE3F7144D15530082B27B /* ccc_x11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ccc_x11.cpp; sourceTree = "<group>"; };
 		53AAE3F8144D15530082B27B /* ccc_x11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccc_x11.h; sourceTree = "<group>"; };
 		53AAE3F9144D15530082B27B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		55FF156021965D3B00221938 /* vehicle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vehicle.cpp; sourceTree = "<group>"; };
+		55FF156121965D3B00221938 /* vehicle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vehicle.hpp; sourceTree = "<group>"; };
+		55FF1563219682A200221938 /* truck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = truck.cpp; sourceTree = "<group>"; };
+		55FF1564219682A200221938 /* truck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = truck.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +57,15 @@
 		53AAE3DC144D14E50082B27B = {
 			isa = PBXGroup;
 			children = (
-				53AAE3F4144D15530082B27B /* ccc_shap.cpp */,
-				53AAE3F5144D15530082B27B /* ccc_shap.h */,
 				53AAE3F6144D15530082B27B /* ccc_win.h */,
-				53AAE3F7144D15530082B27B /* ccc_x11.cpp */,
 				53AAE3F8144D15530082B27B /* ccc_x11.h */,
+				53AAE3F7144D15530082B27B /* ccc_x11.cpp */,
+				53AAE3F5144D15530082B27B /* ccc_shap.h */,
+				53AAE3F4144D15530082B27B /* ccc_shap.cpp */,
+				55FF156121965D3B00221938 /* vehicle.hpp */,
+				55FF156021965D3B00221938 /* vehicle.cpp */,
+				55FF1564219682A200221938 /* truck.hpp */,
+				55FF1563219682A200221938 /* truck.cpp */,
 				53AAE3F9144D15530082B27B /* main.cpp */,
 				53AAE3EA144D14E60082B27B /* Horstmann */,
 				53AAE3E8144D14E60082B27B /* Products */,
@@ -65,7 +75,7 @@
 		53AAE3E8144D14E60082B27B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53AAE3E7144D14E60082B27B /* Horstmann_Master */,
+				53AAE3E7144D14E60082B27B /* P8_10 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53AAE3E6144D14E60082B27B /* Horstmann_Master */ = {
+		53AAE3E6144D14E60082B27B /* P8_10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53AAE3F1144D14E60082B27B /* Build configuration list for PBXNativeTarget "Horstmann_Master" */;
+			buildConfigurationList = 53AAE3F1144D14E60082B27B /* Build configuration list for PBXNativeTarget "P8_10" */;
 			buildPhases = (
 				53AAE3E3144D14E60082B27B /* Sources */,
 				53AAE3E4144D14E60082B27B /* Frameworks */,
@@ -93,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = Horstmann_Master;
+			name = P8_10;
 			productName = Horstmann;
-			productReference = 53AAE3E7144D14E60082B27B /* Horstmann_Master */;
+			productReference = 53AAE3E7144D14E60082B27B /* P8_10 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +117,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Drexel University";
 			};
-			buildConfigurationList = 53AAE3E1144D14E50082B27B /* Build configuration list for PBXProject "Horstmann_Master" */;
+			buildConfigurationList = 53AAE3E1144D14E50082B27B /* Build configuration list for PBXProject "P8_10" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53AAE3E6144D14E60082B27B /* Horstmann_Master */,
+				53AAE3E6144D14E60082B27B /* P8_10 */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FF1565219682A200221938 /* truck.cpp in Sources */,
+				55FF156221965D3B00221938 /* vehicle.cpp in Sources */,
 				53AAE3FA144D15530082B27B /* ccc_shap.cpp in Sources */,
 				53AAE3FB144D15530082B27B /* ccc_x11.cpp in Sources */,
 				53AAE3FC144D15530082B27B /* main.cpp in Sources */,
@@ -208,7 +220,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53AAE3E1144D14E50082B27B /* Build configuration list for PBXProject "Horstmann_Master" */ = {
+		53AAE3E1144D14E50082B27B /* Build configuration list for PBXProject "P8_10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53AAE3EF144D14E60082B27B /* Debug */,
@@ -217,7 +229,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53AAE3F1144D14E60082B27B /* Build configuration list for PBXNativeTarget "Horstmann_Master" */ = {
+		53AAE3F1144D14E60082B27B /* Build configuration list for PBXNativeTarget "P8_10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53AAE3F2144D14E60082B27B /* Debug */,

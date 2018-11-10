@@ -15,13 +15,13 @@ the highly technical details of the implementation.
 
 /* CONSTANTS ****************************************************************/
 
-const double DEFAULT_XMIN = -10;
-const double DEFAULT_YMIN = 10;
-const double DEFAULT_XMAX = 10;
-const double DEFAULT_YMAX = -10;
+const double DEFAULT_XMIN = -1000;
+const double DEFAULT_YMIN = 1000;
+const double DEFAULT_XMAX = 1000;
+const double DEFAULT_YMAX = -1000;
 
-static int DEF_WIDTH = 480;
-static int DEF_HEIGHT = 480;
+static int DEF_WIDTH = 720;
+static int DEF_HEIGHT = 720;
 
 // The following is an alias for an X fonts.
 // Make sure this is available on your system.  Substitute as necessary.
@@ -225,7 +225,6 @@ GraphicWindow& GraphicWindow::operator<< (Line l)
        l.get_end().get_x(), l.get_end().get_y());
    return *this;
 }
-
 
 void GraphicWindow::statusline_prompt(string s)
 {  
@@ -554,6 +553,26 @@ int main(int argc, char** argv)
             }
             break;
          case ButtonPress:
+          {
+              // Good to know able to play around with this.
+              /*
+              Point* origin = new Point(1.0,1.0);
+              Point topleft(-90, 90);
+              double scale = 4.0;
+              Vehicle v(origin, scale);
+              
+              vector<Point*> points = v.get_points();
+              vector<Line> lines = v.get_lines();
+              vector<Circle> circles = v.get_circles();
+              for (int i = 0; i < lines.size(); i++){
+                  cwin << lines[i];
+              }
+              for (int i = 0; i < circles.size(); i++){
+                  cwin << circles[i];
+              }
+               */
+              break;
+          }
          case KeyPress:
          default:
             break;

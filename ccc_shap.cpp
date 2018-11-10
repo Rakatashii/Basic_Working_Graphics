@@ -1,5 +1,5 @@
 #include <cstdio>
-
+#include <iostream>
 #include "ccc_shap.h"
 
 Point::Point()
@@ -120,4 +120,6 @@ void Message::move(double dx, double dy)
 {  
    start.move(dx, dy);
 }
+
+
 

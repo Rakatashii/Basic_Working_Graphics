@@ -9,6 +9,8 @@
 #include <X11/Xos.h>
 #undef Time
 
+#include "vehicle.hpp"
+
 using namespace std;
 
 #include "ccc_shap.h"

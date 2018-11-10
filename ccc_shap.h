@@ -2,6 +2,7 @@
 #define CCC_SHAP_H
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -37,6 +38,9 @@ public:
       @param dy the amount to move in the y-direction
    */
    void move(double dx, double dy);
+/*Point pmove(double dx, double dy){
+        return Point(x+dx, y+dy);
+    }*/
 private:
    double x;
    double y;
@@ -159,5 +163,26 @@ private:
    Point start;
    string text;
 };
+
+/*
+class Vehicle {
+public:
+    Vehicle();
+    Vehicle(Point c, double s = 1.0);
+    void design();
+    vector<Point> get_points();
+    vector<Line> get_lines();
+    vector<Circle> get_circles();
+    Point test() {Point p = Point(-50, 50); return p;}
+private:
+    double scale;
+    double height, width;
+    double centerX, centerY;
+    Circle leftw, rightw;
+    double leftw_radius, rightw_radius;
+    Line roofT, roofB, roofR, roofL, bodyT, bodyB, bodyR, bodyL;
+    Point center, leftw_center, rightw_center, roofTL, roofTR, roofBR, roofBL, bodyTL, bodyTR, bodyBL, bodyBR;
+};
+ */
 
 #endif
